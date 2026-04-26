@@ -113,11 +113,11 @@
                 <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign"
                     prop="overBudget"
                     header-align="center"
-		    label="超支提醒">
+		    label="是否超额">
 		     <template slot-scope="scope">
-                       <span v-if="scope.row.overBudget" style="color: red; font-weight: bold;">超支提醒</span>
-                       <span v-else style="color: green;">正常</span>
-                     </template>
+                        <span v-if="scope.row.overBudget" style="color: red; font-weight: bold;">是</span>
+                        <span v-else style="color: green;">否</span>
+                      </template>
                 </el-table-column>
                 <el-table-column  :sortable="contents.tableSortable" :align="contents.tableAlign"
                     prop="meizhoujine"
